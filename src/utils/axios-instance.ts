@@ -1,13 +1,10 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import Axios, { AxiosRequestConfig, AxiosResponse } from 'axios';
 // import { store } from '../state/';
-// import getConfig from 'next/config';
-
-// const { publicRuntimeConfig } = getConfig();
 
 export const axiosInstance = Axios.create({
-  // baseURL: `${publicRuntimeConfig.endpoint}/${publicRuntimeConfig.api_version}`,
-  // timeout: publicRuntimeConfig.timeout,
+  baseURL: process.env.NEXT_PUBLIC_API_ENDPOINT,
+  timeout: process.env.NEXT_PUBLIC_API_TIME_OUT as any,
   // params: {
   //   api_key: publicRuntimeConfig.api_key,
   // },

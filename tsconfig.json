@@ -18,7 +18,9 @@
     "paths": {
       "@component/*": ["components/*"],
       "@utils/*": ["utils/*"],
-      "@state/*": ["state/*"]
+      "@config/*": ["config/*"],
+      "@store/*": ["stores/*"],
+      "@hook/*": ["hooks/*"]
     }
   },
   "include": ["src/**/*"],
